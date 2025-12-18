@@ -1,0 +1,54 @@
+[CENTER][B]BubbleDeathMessage[/B][/CENTER]
+
+Lightweight, configurable death messages for Paper/Spigot servers.
+
+[B]Features[/B]
+- Replace vanilla death messages with your own templates
+- MiniMessage formatting support
+- Optional PlaceholderAPI support (PAPI placeholders)
+- Optional InteractiveChat support
+- Reload command: [B]/bubbledeathmessage reload[/B] (alias: [B]/bdm[/B])
+
+[B]Dependencies[/B]
+- None required.
+
+[B]Optional (soft-depend)[/B]
+- [B]PlaceholderAPI[/B] (enables %placeholders% inside templates)
+- [B]InteractiveChat[/B] (broadcast through InteractiveChat when present)
+
+[B]Commands[/B]
+- [B]/bubbledeathmessage reload[/B] (alias: [B]/bdm[/B])
+
+[B]Permissions[/B]
+- [B]bubbledeathmessage.reload[/B] (default: op)
+
+[B]Configuration[/B]
+Messages are MiniMessage strings.
+
+Built-in placeholders:
+- <player> <player_displayname>
+- <killer> <killer_displayname> (may be empty)
+- <cause>
+- <world>
+- <x> <y> <z>
+
+If PlaceholderAPI is installed, PAPI placeholders like %vault_prefix% are supported.
+
+Example:
+[CODE]
+messages:
+  default: "<gray><player> died.</gray>"
+  FALL: "<gray><player> fell from a high place.</gray>"
+  LAVA: "<red><player> tried to swim in lava.</red>"
+
+settings:
+  suppress-vanilla: true
+  use-interactivechat-if-present: true
+[/CODE]
+
+[B]Compatibility[/B]
+- Java 17
+- Paper 1.21.x
+
+[B]Source / Issues[/B]
+https://github.com/Ethan0892/BubbleDeathMessage
