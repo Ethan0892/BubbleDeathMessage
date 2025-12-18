@@ -1,31 +1,31 @@
 # BubbleDeathMessage
 
-Lightweight, configurable death messages for Paper/Spigot servers.
+✨ Lightweight, configurable death messages for Paper/Spigot servers.
 
 ## Features
 
-- Replace vanilla death messages with your own templates
-- MiniMessage formatting support
-- Optional PlaceholderAPI support (PAPI placeholders)
-- Optional InteractiveChat support
-- `/bubbledeathmessage reload` (alias: `/bdm`)
+- 🎯 Replace vanilla death messages with your own templates
+- 🎨 MiniMessage formatting support
+- 🧩 Optional PlaceholderAPI support (PAPI placeholders)
+- 💬 Optional InteractiveChat support
+- 🔄 `/bubbledeathmessage reload` (alias: `/bdm`)
 
 ## Dependencies
 
-- None required.
+- ✅ None required.
 
 Optional (soft-depend):
 
-- PlaceholderAPI — enables `%placeholders%` inside your message templates
-- InteractiveChat — broadcasts through InteractiveChat when present
+- 🧩 PlaceholderAPI — enables `%placeholders%` inside your message templates
+- 💬 InteractiveChat — broadcasts through InteractiveChat when present
 
 ## Commands
 
-- `/bubbledeathmessage reload` (alias: `/bdm`)
+- 🔧 `/bubbledeathmessage reload` (alias: `/bdm`)
 
 ## Permissions
 
-- `bubbledeathmessage.reload` (default: op)
+- 🔐 `bubbledeathmessage.reload` (default: op)
 
 ## Configuration
 
