@@ -1,0 +1,4 @@
+dev\bubblecraft\bubbledeathmessage\BubbleDeathMessagePlugin.class
+dev\bubblecraft\bubbledeathmessage\DeathMessageService.class
+dev\bubblecraft\bubbledeathmessage\DeathListener.class
+dev\bubblecraft\bubbledeathmessage\ReloadCommand.class

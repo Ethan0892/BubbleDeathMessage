@@ -1,0 +1,32 @@
+# BubbleDeathMessage
+#
+# Messages are MiniMessage.
+# Built-in placeholders:
+# - <player> <player_displayname>
+# - <killer> <killer_displayname> (may be empty)
+# - <cause>
+# - <world>
+# - <x> <y> <z>
+#
+# If PlaceholderAPI is installed, PAPI placeholders like %vault_prefix% etc are supported.
+#
+messages:
+  default: "<gray><player> died.</gray>"
+
+  # Bukkit DamageCause keys (optional overrides)
+  ENTITY_ATTACK: "<red><player> was slain by <killer></red>"
+  PROJECTILE: "<red><player> was shot by <killer></red>"
+  FALL: "<gray><player> fell from a high place.</gray>"
+  FIRE: "<gold><player> went up in flames.</gold>"
+  FIRE_TICK: "<gold><player> burned to death.</gold>"
+  LAVA: "<red><player> tried to swim in lava.</red>"
+  DROWNING: "<blue><player> drowned.</blue>"
+  VOID: "<dark_purple><player> fell out of the world.</dark_purple>"
+
+settings:
+  # If true, suppress the vanilla death message and broadcast our message ourselves.
+  suppress-vanilla: true
+
+  # If true, and InteractiveChat is installed, broadcast through InteractiveChatAPI
+  # so InteractiveChat can apply its own processing.
+  use-interactivechat-if-present: true

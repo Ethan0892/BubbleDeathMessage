@@ -1,0 +1,17 @@
+name: BubbleDeathMessage
+version: 1.0.0
+main: dev.bubblecraft.bubbledeathmessage.BubbleDeathMessagePlugin
+api-version: '1.16'
+author: BubbleCraft
+softdepend:
+  - PlaceholderAPI
+  - InteractiveChat
+commands:
+  bubbledeathmessage:
+    description: Reload BubbleDeathMessage config
+    usage: /<command> reload
+    aliases: [bdm]
+permissions:
+  bubbledeathmessage.reload:
+    description: Allows reloading BubbleDeathMessage
+    default: op
